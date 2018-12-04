@@ -1,0 +1,12 @@
+server.port: 8088
+spring.profiles: default
+
+spring.datasource:
+  url: "jdbc:h2:mem:mutantdb"
+  driverClassName: org.h2.Driver
+  username: sa
+  password: ""
+  data: "classpath*:create_sql.sql"
+spring.jpa:
+  database-platform: org.hibernate.dialect.H2Dialect
+spring.h2.console.enabled: true
